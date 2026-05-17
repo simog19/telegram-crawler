@@ -1,0 +1,44 @@
+# Secrets - never commit real credentials
+.env
+.env.local
+.env.*.local
+
+# Telethon session files - contain authentication tokens for the Telegram account
+session_*.session
+session_*.session-journal
+*.session
+*.session-journal
+
+# Editor / tool workspaces
+.vscode/
+.idea/
+*.swp
+
+# Python build / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Crawler artefacts (large/regenerable)
+*.log
+plots/*.json
+text_files/
